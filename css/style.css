@@ -57,7 +57,48 @@ header .intro-message h2{
 	-webkit-text-shadow: #000000 2px 1px 2px;
 	-moz-text-shadow: #000000 2px 1px 2px;
 	-o-text-shadow: #000000 2px 1px 2px;
+  opacity: 0;
+  
+    
 }
+header .intro-message h2.first{
+    
+    animation-name: show;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+
+    -webkit-animation-name: show; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: linear; /* Safari 4.0 - 8.0 */
+}
+
+header .intro-message h2.second{
+    
+    animation-name: show;
+    animation-delay: 2s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+
+    -webkit-animation-name: show; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 2s;
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: linear; /* Safari 4.0 - 8.0 */
+
+}
+@keyframes show{
+    0%   {opacity:0;}
+    25%  {opacity:0.25;}
+    50%  {opacity:0.5;}
+    50%  {opacity:0.75;}
+    100% {opacity:1;}
+}
+
+
+
 
 main.main {
     background: #FFFFFF;
@@ -104,9 +145,19 @@ main .card-image{
 	-webkit-box-shadow: 0px 6px 20px 2px rgba(0,0,0,0.5);
 	-moz-box-shadow: 0px 6px 20px 2px rgba(0,0,0,0.5);
 	-o-box-shadow: 0px 6px 20px 2px rgba(0,0,0,0.5);
+
 }
 main .portfolio .card{  
   margin: 50px 0;
+}
+main .portfolio .card-image{
+  transition: transform .3s ease-out;
+}
+main .portfolio .card-image:hover{
+  transform: translate(0, -5px);
+}
+main .portfolio .portfolio-info{
+  margin:20px 0;
 }
 main .testimonial{
   margin-top: -70px;
