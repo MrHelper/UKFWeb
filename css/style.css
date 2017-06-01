@@ -154,7 +154,7 @@ main .portfolio .card-image{
   transition: transform .3s ease-out;
 }
 main .portfolio .card-image:hover{
-  transform: translate(0, -5px);
+  transform: translate(0, -20px);
 }
 main .portfolio .portfolio-info{
   margin:20px 0;
