@@ -1,29 +1,65 @@
 body{
 	background-color: #f1f1f1;
+  overflow-x: hidden;
 }
 a, a:hover{
-  color: blue;
+  color: #76b4ca;
+}
+.icon-primary{
+  color: #76b4ca !important;
+}
+.btn.btn-primary{
+  background-color: #76b4ca !important;
+}
+header .navbar .navbar-nav > .active > a,header .navbar .navbar-nav > .active > a:hover,header .navbar .navbar-nav > .active > a:focus {
+    background-color: transparent;
+}
+header .navbar, .navbar.navbar-default{
+  background-color: transparent;
+  box-shadow: none;
 }
 header .navbar-custom{
-	background-color: white !important;
-	color: #000 !important;
+	background-color: transparent;
 	border-radius: 0;
 	margin-bottom: 0px;
+  border: none;
+  padding: 10px 0;
+}
+header .navbar-custom li{
+  margin-left: 20px;
+}
+header .navbar-custom ul{
+  margin-top: 5px;
+}
+header .navbar-default .navbar-nav>li>a{
+  color: white;
 }
 header .navbar-custom a{
 	font-weight: 500 !important;
+  padding: 10px 10px;
 }
 
 header .navbar-custom .active{
     color: white;
-    background-color: blue;
+    background-color: #76b4ca;
+    border-radius: 25px;
+    box-shadow:0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    border: none;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1) ;
+}
+header .navbar-custom .active:hover{
+  box-shadow:0 14px 26px -12px rgba(0, 0, 0, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+header .navbar-custom .btn-primary a{
+  background-color: transparent !important;
+  color: white !important;
+  
 }
 header .navbar-brand{
 	padding: 5px 15px !important;
 }
 header .intro-header{
-    margin-top: 68px;
-	 padding-top: 10px;
+	   padding-top: 10px;
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
@@ -43,7 +79,7 @@ header .intro-header{
       rgba(0, 0, 0, 0.2), 
       rgba(0, 0, 0, 0.2)
     ), url(../images/intro-bg.jpg) no-repeat center center;
-    background-size: cover;
+    height:100vh;
 }
 header .intro-message {
     position: relative;
@@ -228,7 +264,7 @@ footer .social-icons a{
 
 /* Contact us */
 header iframe{
-  margin-top: 68px;
+    pointer-events: none;
 }
 main .contact-content {
     padding-bottom: 40px;
@@ -254,9 +290,11 @@ main .contact-content .info-horizontal .icon>i {
 }
 main .contact-content .info-horizontal .contact-description {
     overflow: hidden;
+    margin-left: 70px;
 }
 main .contact-content h2.title {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 /* Blog */
@@ -300,6 +338,4 @@ main .right .search .form-group input{
   width: 209px;
 
 }
-.test{
-  width:100px;
-}
+
