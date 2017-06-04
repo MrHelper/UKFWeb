@@ -28,9 +28,6 @@ header .navbar-custom{
 header .navbar-custom li{
   margin-left: 20px;
 }
-header .navbar-custom ul{
-  margin-top: 5px;
-}
 header .navbar-default .navbar-nav>li>a{
   color: white;
 }
@@ -42,7 +39,7 @@ header .navbar-custom a{
 header .navbar-custom .active{
     color: white;
     background-color: #76b4ca;
-    border-radius: 25px;
+    border-radius: 15px;
     box-shadow:0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
     border: none;
     transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1) ;
@@ -162,19 +159,14 @@ main .portfolio{
   margin-top: -50px;
 }
 
-main .portfolio h2{
-	margin-bottom: 50px;
-}
 
-main .card{
-	margin-bottom: 30px;
-  border-radius: 4px;
-  box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.2);
-  background-color: #fafafa;
-  padding: 0 5%;
+
+main .portfolio .row{
+  margin-top: 30px;
 }
 main .card-image{
-  margin-top: -10%;
+  position: relative;
+  margin-bottom: 30px;
   width: 100%;
 	border-radius: 6px;
 	box-shadow: 0px 6px 20px 2px rgba(0,0,0,0.5);
@@ -183,18 +175,43 @@ main .card-image{
 	-o-box-shadow: 0px 6px 20px 2px rgba(0,0,0,0.5);
 
 }
-main .portfolio .card{  
-  margin: 50px 0;
+main .card-image img{
+  border-radius: 6px;
 }
-main .portfolio .card-image{
-  transition: transform .3s ease-out;
-}
-main .portfolio .card-image:hover{
-  transform: translate(0, -20px);
-}
+
 main .portfolio .portfolio-info{
-  margin:20px 0;
+  position: absolute;
+  top:0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .2s, visibility .2s;
+  cursor: pointer;
 }
+main .portfolio .portfolio-info h4.title {
+  transition: .2s;
+  transform: translateY(1em);
+}
+main .portfolio .portfolio-info a{
+  color: #fff;
+}
+
+main .portfolio .card-image:hover .portfolio-info{
+  visibility: visible;
+  opacity: 1;
+}
+main .portfolio .portfolio-info:hover h4.title {
+  transform: translateY(0);
+}
+
+
 main .testimonial{
   margin-top: -70px;
 }
@@ -273,6 +290,9 @@ main .contact-content {
 main .contact-content .container{
       max-width: 970px;
 }
+main .contact-content .card{
+  padding: 0 5%;
+}
 main .contact-content .info {
     max-width: 360px;
     margin: 0 auto;
@@ -300,6 +320,13 @@ main .contact-content h2.title {
 /* Blog */
 main .post{
   margin: 100px 0 50px 0; 
+}
+main .post .card{
+  padding: 0 5%;
+}
+main .post .card-image{
+  margin-bottom: 0;
+  margin-top: -5%;
 }
 main .post .post-description{
   margin: 30px 0;
