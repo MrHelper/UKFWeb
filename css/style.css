@@ -1,18 +1,34 @@
+/* Reset */
+
 body{
 	background-color: #f1f1f1;
   overflow-x: hidden;
 }
-a, a:hover{
-  color: #76b4ca;
+a:hover{
+  color: #76b4ca !important;
 }
+
 .icon-primary{
   color: #76b4ca !important;
 }
-.btn.btn-primary{
+.btn.btn-primary:hover, .btn.btn-primary:focus{
   background-color: #76b4ca !important;
 }
+.card{
+  background-color: #fafafa;
+}
+header .navbar-default .navbar-nav>li>a{
+  color: white;
+}
+header.contact-us .navbar-default .navbar-nav>li>a{
+  color: black;
+}
+
+/* Header */
+
 header .navbar .navbar-nav > .active > a,header .navbar .navbar-nav > .active > a:hover,header .navbar .navbar-nav > .active > a:focus {
     background-color: transparent;
+    color: white !important;
 }
 header .navbar, .navbar.navbar-default{
   background-color: transparent;
@@ -28,15 +44,14 @@ header .navbar-custom{
 header .navbar-custom li{
   margin-left: 20px;
 }
-header .navbar-default .navbar-nav>li>a{
-  color: white;
-}
+
+
 header .navbar-custom a{
 	font-weight: 500 !important;
   padding: 10px 10px;
 }
 
-header .navbar-custom .active{
+header .navbar-custom .active, .btn.btn-primary{
     color: white;
     background-color: #76b4ca;
     border-radius: 15px;
@@ -44,13 +59,17 @@ header .navbar-custom .active{
     border: none;
     transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1) ;
 }
-header .navbar-custom .active:hover{
-  box-shadow:0 14px 26px -12px rgba(0, 0, 0, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+
+header .navbar-custom .active:hover, .btn.btn-primary:hover{
+  box-shadow:0 14px 26px -12px rgba(0, 0, 0, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2) !important;
 }
 header .navbar-custom .btn-primary a{
   background-color: transparent !important;
   color: white !important;
   
+}
+header .navbar-custom .active a:hover{
+  color: white !important;
 }
 header .navbar-brand{
 	padding: 5px 15px !important;
@@ -131,7 +150,7 @@ header .intro-message h2.second{
 }
 
 
-
+/** Main **/
 
 main.main {
     background: #FFFFFF;
@@ -143,6 +162,10 @@ main.main-raised {
     border-radius: 6px;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
+
+
+/* Index */
+
 main section{
 	padding: 70px 0;
 }
@@ -277,9 +300,8 @@ footer .social-icons a{
 }
 
 
-
-
 /* Contact us */
+
 header iframe{
     pointer-events: none;
 }
@@ -291,7 +313,8 @@ main .contact-content .container{
       max-width: 970px;
 }
 main .contact-content .card{
-  padding: 0 5%;
+  padding: 0 5% 5% 5%;
+  background-color: #fafafa;
 }
 main .contact-content .info {
     max-width: 360px;
@@ -356,6 +379,7 @@ main .right{
 }
 main .right .card{
   padding: 10px 20px;
+  margin-bottom: 30px;
 }
 main .right .search .form-group{
   margin-top: 10px;
