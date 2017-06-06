@@ -1,4 +1,4 @@
-/* Reset */
+/********************************* Reset ***************************************/
 
 body{
 	background-color: #f1f1f1;
@@ -21,12 +21,25 @@ a:hover, a:focus{
 .card{
   background-color: #fafafa;
 }
-header .navbar-default .navbar-nav>li>a{
+.navbar-default .navbar-nav>li>a{
   color: #777;
+}
+.form-group.is-focused .form-control {
+  outline: none;
+  background-image: linear-gradient(#76b4ca, #76b4ca), linear-gradient(#D2D2D2, #D2D2D2);
+  background-size: 100% 2px, 100% 1px;
+  box-shadow: none;
+  transition-duration: 0.3s;
+}
+.form-group.is-focused .form-control .material-input:after {
+  background-color: #76b4ca !important;
+}
+.form-group.is-focused label.control-label {
+  color: #76b4ca;
 }
 
 
-/* Header */
+/*********************************** Header ************************************************/
 
 header .navbar .navbar-nav > .active > a,header .navbar .navbar-nav > .active > a:hover,header .navbar .navbar-nav > .active > a:focus {
     background-color: transparent;
@@ -114,8 +127,8 @@ header .intro-header{
 
 header .intro-message {
     position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    padding-top: 23%;
+    padding-bottom: 23%;
     
 }
 header .intro-message h2{
@@ -124,70 +137,11 @@ header .intro-message h2{
 	-webkit-text-shadow: #000000 1px 1px 2px;
 	-moz-text-shadow: #000000 1px 1px 2px;
 	-o-text-shadow: #000000 1px 1px 2px;
-  opacity: 0;
-  
     
 }
-header .intro-message h2.first{
-    
-    animation-name: show;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
-
-    -webkit-animation-name: show; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
-    -webkit-animation-fill-mode: forwards;
-    -webkit-animation-timing-function: linear; /* Safari 4.0 - 8.0 */
-
-    -moz-animation-name: show; /* Safari 4.0 - 8.0 */
-    -moz-animation-duration: 3s; /* Safari 4.0 - 8.0 */
-    -moz-animation-fill-mode: forwards;
-    -moz-animation-timing-function: linear; /* Safari 4.0 - 8.0 */
-
-    -o-animation-name: show; /* Safari 4.0 - 8.0 */
-    -o-animation-duration: 3s; /* Safari 4.0 - 8.0 */
-    -o-animation-fill-mode: forwards;
-    -o-animation-timing-function: linear; /* Safari 4.0 - 8.0 */
-}
-
-header .intro-message h2.second{
-    
-    animation-name: show;
-    animation-delay: 2s;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
-
-    -webkit-animation-name: show; /* Safari 4.0 - 8.0 */
-    -webkit-animation-delay: 2s;
-    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
-    -webkit-animation-fill-mode: forwards;
-    -webkit-animation-timing-function: linear; /* Safari 4.0 - 8.0 */
-
-    -moz-animation-name: show; /* Safari 4.0 - 8.0 */
-    -moz-animation-delay: 2s;
-    -moz-animation-duration: 3s; /* Safari 4.0 - 8.0 */
-    -moz-animation-fill-mode: forwards;
-    -moz-animation-timing-function: linear; /* Safari 4.0 - 8.0 */
-
-    -o-animation-name: show; /* Safari 4.0 - 8.0 */
-    -o-animation-delay: 2s;
-    -o-animation-duration: 3s; /* Safari 4.0 - 8.0 */
-    -o-animation-fill-mode: forwards;
-    -o-animation-timing-function: linear; /* Safari 4.0 - 8.0 */
-
-}
-@keyframes show{
-    0%   {opacity:0;}
-    25%  {opacity:0.25;}
-    50%  {opacity:0.5;}
-    50%  {opacity:0.75;}
-    100% {opacity:1;}
-}
 
 
-/** Main **/
+/**************************************** Main *************************************/
 
 main.main {
     background: #FFFFFF;
@@ -204,7 +158,7 @@ main.main-raised {
 }
 
 
-/* Index */
+/************************************** Index ************************************************/
 
 main section{
 	padding: 70px 0;
@@ -244,10 +198,6 @@ main .description .bg{
   -o-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.2);
 }
 
-
-main .portfolio{
-  margin-top: -50px;
-}
 main .portfolio .row{
   margin-top: 0px;
 }
@@ -362,7 +312,7 @@ main .testimonial blockquote p{
 }
 
 
-/* Contact us */
+/*************************************** Contact us ***************************************/
 
 header iframe{
     pointer-events: none;
@@ -382,12 +332,11 @@ main .contact-content .info {
     max-width: 360px;
     margin: 0 auto;
     padding: 70px 0 30px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
     padding-top: 0;
 }
 main .contact-content .info-horizontal .icon {
     float: left;
-    margin-top: 24px;
     margin-right: 10px;
 }
 main .contact-content .info-horizontal .icon>i {
@@ -402,7 +351,7 @@ main .contact-content h2.title {
     text-align: center;
 }
 
-/* Blog */
+/***************************************** Blog ***********************************************/
 main .post{
   margin: 100px 0 50px 0; 
 }
@@ -478,7 +427,7 @@ main .right li{
 }
 
 
-/* Footer */
+/***************************************** Footer **********************************************/
 footer{
   padding:40px 0;
 }
