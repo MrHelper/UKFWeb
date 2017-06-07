@@ -52,12 +52,26 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-message">
-                        <h2 class="tlt">
+                        <h2 class="tlt Mtitle">
 	                        <ul class="texts">
-	                        	<li data-in-effect="flip" data-out-effect="tada" data-out-shuffle="true">Tư vấn thiết kế nội thất</li>
-	                        	<li data-in-effect="flip" data-out-effect="tada" data-out-shuffle="true">Thi công nội thất</li>
+	                        	<li data-in-effect="flash" data-in-shuffle="true" data-out-effect="pulse" data-out-shuffle="true">Tư vấn thiết kế nội thất</li>
 	                        </ul>                 
                         </h2>
+                        <h2 class="tlt Mtitle2">
+	                        <ul class="texts">
+	                        	<li data-in-effect="flash" data-in-shuffle="true" data-out-effect="pulse" data-out-shuffle="true">Thi công  nội thất</li>
+	                        </ul>                 
+                        </h2>
+                        <h3 class="tlt Stitle">
+                        	<ul class="texts">
+	                        	<li data-in-effect="flip" data-in-shuffle="true" data-out-effect="flash" data-out-shuffle="true">CĂN HỘ</li>
+	                        	<li data-in-effect="flip" data-in-shuffle="true" data-out-effect="flash" data-out-shuffle="true">CÔNG TRÌNH CÔNG CỘNG</li>
+	                        	<li data-in-effect="flip" data-in-shuffle="true" data-out-effect="flash" data-out-shuffle="true">BAR</li>
+	                        	<li data-in-effect="flip" data-in-shuffle="true" data-out-effect="flash" data-out-shuffle="true">PUB</li>
+	                        	<li data-in-effect="flip" data-in-shuffle="true" data-out-effect="flash" data-out-shuffle="true">KARAOKE</li>
+	                        	<li data-in-effect="flip" data-in-shuffle="true" data-out-effect="flash" data-out-shuffle="true">NHÀ HÀNG</li>
+	                        </ul>
+                        </h3>
                     </div>
                 </div>
             </div>
@@ -277,8 +291,20 @@
 	<script src="js/jquery.textillate.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
-			$('.tlt').textillate({
+			$('.Mtitle').textillate({
+				loop: false,
+				minDisplayTime: 3000,
+				callback: function () {}
+			});
+			$('.Mtitle2').textillate({
+				loop: false,
+				initialDelay: 2000,
+				minDisplayTime: 3000,
+				callback: function () {}
+			});
+			$('.Stitle').textillate({
 				loop: true,
+				initialDelay: 3000,
 				callback: function () {}
 			});
 		});
