@@ -1,7 +1,7 @@
 /********************************* Reset ***************************************/
 
 body{
-	background-color: #f1f1f1;
+	background-color: #fff;
   overflow-x: hidden;
   padding-top: 30px;
 }
@@ -37,7 +37,9 @@ a:hover, a:focus{
 .form-group.is-focused label.control-label {
   color: #76b4ca;
 }
-
+.nav>li>a:hover, .nav>li>a:focus {
+    background-color: transparent;
+}
 
 /*********************************** Header ************************************************/
 
@@ -98,6 +100,11 @@ header .navbar-custom .active a:hover{
 }
 header .navbar-brand{
 	padding: 5px 15px !important;
+  height: auto !important;
+}
+header .navbar-custom .navbar-nav{
+  margin-top: 13px;
+  margin-left: 20px;
 }
 header .intro-header{
 	   padding-top: 10px;
@@ -356,6 +363,12 @@ main .contact-content h2.title {
     margin-bottom: 50px;
     text-align: center;
 }
+main .contact-content .info p{
+  margin-top:2px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+}
 
 /***************************************** Blog ***********************************************/
 main .post{
@@ -435,17 +448,47 @@ main .right li{
 
 /***************************************** Footer **********************************************/
 footer{
-  padding:40px 0;
+  margin-top: 40px;
+  padding:0;
+}
+footer .navbar-brand{
+  height: auto;
+  float: none;
+}
+footer .sub-menu{
+  padding:20px 0 40px 0;
+}
+footer ul li h5{
+  margin:0;
+}
+footer ul li a {
+    padding: 10px 0px !important;
+}
+footer .copyright{
+  padding:20px 0;
   background-color: #333;
   color: #fff;
-  margin-top: 25px;
-}
-footer .social-icons{
-  
-  font-size: 20px ;
-
 }
 footer .social-icons a{
-  margin-left: 10px;
+  margin-right: 10px;
   color: #777 !important;
+  font-size: 30px;
+}
+footer .social-icons a:hover{
+  color: #76b4ca !important;
+}
+footer .social-icons .info .icon > i {
+    font-size: 24px;
+    color: #777;
+}
+footer .social-icons .info {
+    max-width: 100%;
+    padding: 20px 0 0;
+}
+footer .info-horizontal .icon {
+    float: left;
+}
+footer .info-horizontal .contact-description {
+    overflow: hidden;
+    margin-left: 40px;
 }
