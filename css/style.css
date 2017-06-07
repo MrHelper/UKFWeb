@@ -131,10 +131,11 @@ header .intro-message {
     padding-bottom: 15%;
     
 }
-header .intro-message h2{
-  font-weight: 500;
-  font-size:60px;
-  color:#333;
+header .intro-message h2 {
+    font-weight: 500;
+    font-size: 60px;
+    color: #333;
+    text-shadow: 3px 3px 5px rgba(255,255,255,0.7);
 }
 header .intro-message h3{
   font-size: 50px;
