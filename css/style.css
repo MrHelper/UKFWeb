@@ -107,19 +107,19 @@ header .intro-header{
     background:linear-gradient(
       rgba(255, 255, 255, 0.1), 
       rgba(255, 255, 255, 0.1)
-    ), url(../images/OIH9K00.jpg) no-repeat center center;
+    ), url(../images/Banner1.jpg) no-repeat center center;
     background:-webkit-linear-gradient(
       rgba(255, 255, 255, 0.1), 
       rgba(255, 255, 255, 0.1)
-    ), url(../images/OIH9K00.jpg) no-repeat center center;
+    ), url(../images/Banner1.jpg) no-repeat center center;
     background:-moz-linear-gradient(
       rgba(255, 255, 255, 0.1), 
       rgba(255, 255, 255, 0.1)
-    ), url(../images/OIH9K00.jpg) no-repeat center center;
+    ), url(../images/Banner1.jpg) no-repeat center center;
     background:-o-linear-gradient(
       rgba(255, 255, 255, 0.1), 
       rgba(255, 255, 255, 0.1)
-    ), url(../images/OIH9K00.jpg) no-repeat center center;
+    ), url(../images/Banner1.jpg) no-repeat center center;
     height:100vh;
     background-size: cover;
 }
@@ -133,13 +133,13 @@ header .intro-message {
 }
 header .intro-message h2 {
     font-weight: 500;
-    font-size: 60px;
+    font-size: 55px;
     color: #333;
     text-shadow: 3px 3px 5px rgba(255,255,255,0.7);
     text-transform: uppercase;
 }
 header .intro-message h3{
-  font-size: 50px;
+  font-size: 45px;
   color: #ffffff;
   font-weight: 900;
   text-shadow: 3px 1px 0px rgba(0,0,0,0.5);
@@ -436,6 +436,9 @@ main .right li{
 /***************************************** Footer **********************************************/
 footer{
   padding:40px 0;
+  background-color: #333;
+  color: #fff;
+  margin-top: 25px;
 }
 footer .social-icons{
   
