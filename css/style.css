@@ -107,19 +107,19 @@ header .intro-header{
     background:linear-gradient(
       rgba(255, 255, 255, 0.1), 
       rgba(255, 255, 255, 0.1)
-    ), url(../images/Banner1.jpg) no-repeat center center;
+    ), url(../images/Banner.png) no-repeat center center;
     background:-webkit-linear-gradient(
       rgba(255, 255, 255, 0.1), 
       rgba(255, 255, 255, 0.1)
-    ), url(../images/Banner1.jpg) no-repeat center center;
+    ), url(../images/Banner.png) no-repeat center center;
     background:-moz-linear-gradient(
       rgba(255, 255, 255, 0.1), 
       rgba(255, 255, 255, 0.1)
-    ), url(../images/Banner1.jpg) no-repeat center center;
+    ), url(../images/Banner.png) no-repeat center center;
     background:-o-linear-gradient(
       rgba(255, 255, 255, 0.1), 
       rgba(255, 255, 255, 0.1)
-    ), url(../images/Banner1.jpg) no-repeat center center;
+    ), url(../images/Banner.png) no-repeat center center;
     height:100vh;
     background-size: cover;
 }
@@ -139,10 +139,10 @@ header .intro-message h2 {
     text-transform: uppercase;
 }
 header .intro-message h3{
-  font-size: 45px;
-  color: #ffffff;
+  font-size: 65px;
+  color: #38809a;
   font-weight: 900;
-  text-shadow: 3px 1px 0px rgba(0,0,0,0.5);
+  text-shadow: 3px 1px 0px rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
 }
 
