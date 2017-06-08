@@ -40,7 +40,9 @@ a:hover, a:focus{
 .nav>li>a:hover, .nav>li>a:focus {
     background-color: transparent;
 }
-
+h1,h2,h3,h4,h5,h6{
+  text-transform: uppercase;
+}
 /*********************************** Header ************************************************/
 
 header .navbar .navbar-nav > .active > a,header .navbar .navbar-nav > .active > a:hover,header .navbar .navbar-nav > .active > a:focus {
