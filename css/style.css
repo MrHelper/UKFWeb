@@ -494,3 +494,12 @@ footer .info-horizontal .contact-description {
     overflow: hidden;
     margin-left: 40px;
 }
+
+footer .title{
+  background: rgb(92, 165, 191);
+  border-radius: 3px;
+  padding: 5px 10px;
+  color: #fff;
+  font-weight: 400;
+  box-shadow: 2px 4px 3px 0px rgba(0,0,0,0.3);
+}
