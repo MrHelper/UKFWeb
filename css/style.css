@@ -22,7 +22,7 @@ a:hover, a:focus{
   background-color: #fafafa;
 }
 .navbar-default .navbar-nav>li>a{
-  color: #777;
+  color: #333;
 }
 .form-group.is-focused .form-control {
   outline: none;
