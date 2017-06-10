@@ -67,6 +67,13 @@ header .navbar-custom{
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
   -o-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
 }
+header .navbar-custom .navbar-nav{
+  margin-top: 13px;
+}
+header .navbar-custom .navbar-right{
+
+    margin-right: 0px;
+}
 header .navbar-custom li{
   margin-left: 20px;
 }
@@ -110,10 +117,7 @@ header .navbar-brand{
 	padding: 5px 15px !important;
   height: auto !important;
 }
-header .navbar-custom .navbar-nav{
-  margin-top: 13px;
-  margin-left: 20px;
-}
+
 header .intro-header{
 	   padding-top: 10px;
     padding-bottom: 50px;
@@ -182,7 +186,7 @@ main.main-raised {
 /************************************** Index ************************************************/
 
 main section{
-	padding: 70px 0;
+	padding: 40px 0;
 }
 main .description{
 	
@@ -216,7 +220,6 @@ main .description .bg{
   -moz-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.2);
   -o-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.2);
 }
-
 main .portfolio .row{
   margin-top: 0px;
 }
@@ -267,9 +270,6 @@ main .portfolio .portfolio-info:hover h4.title {
 }
 
 
-main .testimonial{
-  margin-top: -70px;
-}
 main .testimonial h2{
 	margin-bottom: 40px;
 }
