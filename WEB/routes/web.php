@@ -12,5 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+Route::get('/lienhe', function () {
+    return view('contact');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
