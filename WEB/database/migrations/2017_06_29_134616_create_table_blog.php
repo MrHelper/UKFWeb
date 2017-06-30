@@ -15,10 +15,10 @@ class CreateTableBlog extends Migration
     {
         Schema::create('blog', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('danhmuc');
-            $table->string('tieude');
-            $table->string('hinhanh');
-            $table->text('noidung');
+            $table->integer('categlory');
+            $table->string('title');
+            $table->string('iamges');
+            $table->longText('content');
             $table->timestamps();
         });
     }

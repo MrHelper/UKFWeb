@@ -15,7 +15,7 @@ class CreateTableMenuBlog extends Migration
     {
         Schema::create('blog_menu', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('tieude');
+            $table->string('title');
             $table->timestamps();
         });
     }

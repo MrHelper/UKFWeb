@@ -18,7 +18,7 @@ class CreateTableTknt extends Migration
             $table->string('title');
             $table->string('description',1000);
             $table->string('image');
-            $table->text('content');
+            $table->longText('content');
             $table->timestamps();
         });
     }

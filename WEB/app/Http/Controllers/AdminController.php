@@ -61,7 +61,7 @@ class AdminController extends Controller
 		    	'content'=>$request->input('content'), 
 			]);
 		}
-    	return true;
+    	return response()->json(['mess'=>'successful',200]);
     }
 
     public function TKNTGet($ID){
