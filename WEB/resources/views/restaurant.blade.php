@@ -36,10 +36,10 @@
 
 		    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		    		<ul class="nav navbar-nav navbar-right">
-		        		<li><a href="index.html">Thiết kế nội thất</a></li>
-		        		<li class="active"><a href="restaurant.html">Thi công vận hành nhà hàng</a></li>
-		        		<li><a href="blog.html">Blog</a></li>
-		        		<li><a href="contact-us.html">Liên hệ</a></li>
+		        		<li><a href="{{route('index')}}">Thiết kế nội thất</a></li>
+		        		<li class="active"><a href="{{route('rest')}}">Thi công vận hành nhà hàng</a></li>
+		        		<li><a href="{{route('blog')}}">Blog</a></li>
+		        		<li><a href="{{route('contact')}}">Liên hệ</a></li>
 		        		<li><a href="#"><i class="material-icons">language</i>VIE/ENG</a></li>		
 		    		</ul>
 		    		
@@ -147,57 +147,17 @@
 			<h2 class="title">Công trình đã thực hiện</h2>
 			<div class="container">
 				<div class="row">
+					@foreach($DuAn as $DA)
 					<div class="col-md-4">
 						<div class="card-image">
-							<a href="#"><img class="" src="images/OIH9K00.jpg" width="100%"></a>
+							<a href="{{route('TCNH-DT',$DA->id)}}"><img class="" src="{{$DA->image}}" width="100%"></a>
 							<div class="portfolio-info">
-								<h4 class="title"><a href="#">Lorem Ipsum</a></h4>
+								<h4 class="title"><a href="{{route('TCNH-DT',$DA->id)}}">{{$DA->title}}</a></h4>
 							</div>	
-						</div>
-	    							
+						</div>		
 					</div>
-					<div class="col-md-4">
-						<div class="card-image">
-							<a href="#"><img class="" src="images/OE9V430.jpg" width="100%"></a>
-							<div class="portfolio-info">
-								<h4 class="title"><a href="#">Lorem Ipsum</a></h4>
-							</div>	
-						</div>
-	    							
-					</div>
-					<div class="col-md-4">
-						<div class="card-image">
-							<a href="#"><img class="" src="images/OE9SE00.jpg" width="100%"></a>
-							<div class="portfolio-info">
-								<h4 class="title"><a href="#">Lorem Ipsum</a></h4>
-							</div>	
-						</div>
-	    							
-					</div>
-					
+					@endforeach
 				</div>
-				<div class="row">
-					<div class="col-md-4 col-md-offset-2">
-						<div class="card-image">
-							<a href="#"><img class="" src="images/OE9S2F0.jpg" width="100%"></a>
-							<div class="portfolio-info">
-								<h4 class="title"><a href="#">Lorem Ipsum</a></h4>
-							</div>	
-						</div>
-	    							
-					</div>
-					<div class="col-md-4 col-md-offset-right-2">
-						<div class="card-image">
-							<a href="#"><img class="" src="images/3554.jpg" width="100%"></a>
-							<div class="portfolio-info">
-								<h4 class="title"><a href="#">Lorem Ipsum</a></h4>
-							</div>	
-						</div>
-	    							
-					</div>
-					
-				</div>
-				
 			</div>	
 		</section>
 

@@ -68,9 +68,9 @@
 					</div>
 					<div class="list-group">
 						<a href="#" class="list-group-item">Dashboard</a>
-						<a href="#" class="list-group-item">Thiết kế nội thất</a>
-						<a href="#" class="list-group-item">Thi công khách sạn</a>
-						<a href="#" class="list-group-item">Blog</a>
+						<a href="{{route('admincp.L-TKNT')}}" class="list-group-item">Thiết kế nội thất</a>
+						<a href="{{route('admincp.L-TCNH')}}" class="list-group-item">Thi công khách sạn</a>
+						<a href="{{route('admincp.L-BLOG')}}" class="list-group-item">Blog</a>
 					</div>
 				</div>
 			</div>
@@ -94,8 +94,9 @@
 						</div>
 						<hr>
 	                    <div class="form-group">
-	                    <button id="btnAceept" tkID="{{$DuAn->id}}" type="button" class="btn btn-primary">Chấp nhận</button>
-	                    <button id="btnCancel" type="button" class="btn btn-primary pull-right">Huỷ</button>
+	                    <button id="btnAccept" tkID="{{$DuAn->id}}" type="button" class="btn btn-primary">Chấp nhận</button>
+	                    <button id="btnCancel" type="button" class="btn btn-primary">Huỷ</button>
+	                    <button id="btnDelete" tkID="{{$DuAn->id}}" type="button" class="btn btn-danger pull-right">Xoá</button>
 	                    </div>
 					</div>
 				</div>
@@ -123,13 +124,15 @@
 			})
 
 			$('#content').summernote('code',$('#Decode').html());
-			
-
 		});
-		$('#btnAceept').on('click',function(){
+		$('#btnAccept').on('click',function(){
 			if(CheckInput()){
 				EditDuAn();
 			}
+		});
+
+		$('#btnDelete').on('click',function(){
+			DeleteDuAn();
 		});
 
 		function CheckInput(){
@@ -153,7 +156,7 @@
 			var title = $('#title').val();
 			var description = $('#description').val();
 			var content = $('#content').val();
-			formData.append('id',$('#btnAceept').attr("tkID"));
+			formData.append('id',$('#btnAccept').attr("tkID"));
 			formData.append('title',$('#title').val());
 			formData.append('description',description);
 			formData.append('content',content);
@@ -171,7 +174,28 @@
 	            dataType: 'JSON',
 	            success:function(data){
 	                $('#LoadingDiv').fadeOut();
-	                ClearControl();
+	                location.href = '{{route('admincp.L-TKNT')}}';
+	            }
+	        });
+		}
+
+		function DeleteDuAn(){
+			var formData = new FormData;
+			formData.append('id',$('#btnDelete').attr("tkID"));
+			$.ajax({
+	            headers: {
+	        	'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+	    		},
+	            url: '{{route('admincp.DeleteTKNT')}}',
+	            type: 'POST',
+	            processData: false,
+	            contentType: false,
+	            cache: false,
+	            data: formData,
+	            dataType: 'JSON',
+	            success:function(data){
+	                $('#LoadingDiv').fadeOut();
+	                location.href = '{{route('admincp.L-TKNT')}}';
 	            }
 	        });
 		}

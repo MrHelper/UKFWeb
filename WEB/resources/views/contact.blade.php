@@ -36,11 +36,11 @@
 
 		    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		    		<ul class="nav navbar-nav navbar-right">
-		        		<li><a href="index.html">Thiết kế nội thất</a></li>
-		        		<li><a href="restaurant.html">Thi công vận hành nhà hàng</a></li>
-		        		<li><a href="blog.html">Blog</a></li>
-		        		<li class="active"><a href="contact-us.html">Liên hệ</a></li>
-		        		<li><a href="#"><i class="material-icons">language</i>VIE/ENG</a></li>
+		        		<li><a href="{{route('index')}}">Thiết kế nội thất</a></li>
+		        		<li><a href="{{route('rest')}}">Thi công vận hành nhà hàng</a></li>
+		        		<li><a href="{{route('blog')}}">Blog</a></li>
+		        		<li class="active"><a href="{{route('contact')}}">Liên hệ</a></li>
+		        		<li><a href="#"><i class="material-icons">language</i>VIE/ENG</a></li>		
 		    		</ul>
 		    	</div>
 			</div>

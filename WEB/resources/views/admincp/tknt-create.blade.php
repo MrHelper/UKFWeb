@@ -68,9 +68,9 @@
 					</div>
 					<div class="list-group">
 						<a href="#" class="list-group-item">Dashboard</a>
-						<a href="#" class="list-group-item">Thiết kế nội thất</a>
-						<a href="#" class="list-group-item">Thi công khách sạn</a>
-						<a href="#" class="list-group-item">Blog</a>
+						<a href="{{route('admincp.L-TKNT')}}" class="list-group-item">Thiết kế nội thất</a>
+						<a href="{{route('admincp.L-TCNH')}}" class="list-group-item">Thi công khách sạn</a>
+						<a href="{{route('admincp.L-BLOG')}}" class="list-group-item">Blog</a>
 					</div>
 				</div>
 			</div>

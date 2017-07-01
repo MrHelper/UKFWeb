@@ -17,7 +17,7 @@ class CreateTableBlog extends Migration
             $table->increments('id');
             $table->integer('categlory');
             $table->string('title');
-            $table->string('iamges');
+            $table->string('image');
             $table->longText('content');
             $table->timestamps();
         });

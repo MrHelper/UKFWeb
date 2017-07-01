@@ -68,41 +68,37 @@
 					</div>
 					<div class="list-group">
 						<a href="#" class="list-group-item">Dashboard</a>
-						<a href="#" class="list-group-item">Thiết kế nội thất</a>
-						<a href="#" class="list-group-item">Thi công khách sạn</a>
-						<a href="#" class="list-group-item">Blog</a>
+						<a href="{{route('admincp.L-TKNT')}}" class="list-group-item">Thiết kế nội thất</a>
+						<a href="{{route('admincp.L-TCNH')}}" class="list-group-item">Thi công khách sạn</a>
+						<a href="{{route('admincp.L-BLOG')}}" class="list-group-item">Blog</a>
 					</div>
 				</div>
 			</div>
 			<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h3 class="panel-title">Thiết kế nội thất</h3>
-					</div>
-					<div class="panel-body">
-						<div class="form-group">
-							<input type="text" class="form-control" id="title"  placeholder="Tiêu đề" required>
-						</div>
-						<div class="form-group">
-							<input type="text" class="form-control" id="description"  placeholder="Tóm tắt" required>
-						</div>
-						<div class="form-group">
-	                    <textarea class="form-control" type="textarea" id="content" placeholder="Nội dung"></textarea>
-	                        <span class="help-block"><p id="characterLeft" class="help-block ">You have reached the limit</p></span>                    
-	                    </div>
-						<div class="form-group">
-							<input type="file" name="imageup" value="" placeholder="" id="Image">
-						</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-right">
+						<a href="{{route('admincp.C-TKNT')}}" class="btn btn-danger text-right"><span><i class="fa fa-plus"></i></span> Thêm mới</a>
 						<hr>
-	                    <div class="form-group">
-	                    <button id="btnAceept" type="button" class="btn btn-primary">Chấp nhận</button>
-	                    <button id="btnCancel" type="button" class="btn btn-primary pull-right">Huỷ</button>
-	                    </div>
 					</div>
 				</div>
-				<div class="hidden" id="Decode">
-					
-				</div>
+				<table class="table table-hover">
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>Dự án</th>
+							<th>Tóm tắt</th>
+						</tr>
+					</thead>
+					<tbody>
+						@foreach($DuAn as $DA)
+						<tr>
+							<td><a href="{{route('admincp.E-TKNT',$DA->id)}}">{{$DA->id}}</a></td>
+							<td><a href="{{route('admincp.E-TKNT',$DA->id)}}">{{$DA->title}}</a></td>
+							<td>{{$DA->description}}</td>
+						</tr>
+						@endforeach
+					</tbody>
+				</table>
 			</div>
 		</div>
 	</div>
